@@ -1,0 +1,27 @@
+Sep-30 09:56:53.934 [main] DEBUG nextflow.cli.Launcher - $> nextflow run nf-core/rnaseq -c nextflow.config -r 3.27.0 --input input_sample_sheet.csv --outdir rnaseq_output --gtf Mus_musculus.GRCm38.102.gtf --fasta Mus_musculus.GRCm38.dna.chromosome.19.fa --aligner star_salmon -profile docker
+Sep-30 09:56:54.003 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.6
+Sep-30 09:56:54.047 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/nina/.nextflow/plugins; core-plugins: nf-amazon@3.9.2,nf-azure@1.22.6,nf-cloudcache@0.6.0,nf-codecommit@0.5.3,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.21.1,nf-tower@1.28.2,nf-wave@1.21.0
+Sep-30 09:56:54.072 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-30 09:56:54.073 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-30 09:56:54.076 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
+Sep-30 09:56:54.092 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Sep-30 09:56:54.233 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
+Sep-30 09:56:54.237 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-30 09:56:54.250 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /home/nina/.nextflow/scm
+Sep-30 09:56:54.265 [main] DEBUG nextflow.scm.AssetManager - Selecting multi-revision strategy
+Sep-30 09:56:54.413 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+Sep-30 09:56:54.993 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/nina/.nextflow/assets/.repos/nf-core/rnaseq/bare/config; branch: master; remote: origin; url: https://github.com/nf-core/rnaseq.git
+Sep-30 09:56:55.023 [main] DEBUG nextflow.scm.RepositoryFactory - Found Git repository result: [RepositoryFactory]
+Sep-30 09:56:55.033 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/nina/.nextflow/assets/.repos/nf-core/rnaseq/bare/config; branch: master; remote: origin; url: https://github.com/nf-core/rnaseq.git
+Sep-30 09:56:55.697 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /home/nina/.nextflow/assets/.repos/nf-core/rnaseq/clones/a1fcdddd3b826fe46eb46f0479f2ff8a7815af05/nextflow.config
+Sep-30 09:56:55.703 [main] DEBUG nextflow.cli.Launcher - Operation aborted
+nextflow.exception.AbortOperationException: The specified configuration file does not exist: /home/nina/computational-workflows-2026/nextflow.config -- check the name or choose another file
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.config.ConfigBuilder.validateConfigFiles(ConfigBuilder.groovy:265)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.config.ConfigBuilder.buildConfigObject(ConfigBuilder.groovy:807)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.config.ConfigBuilder.build(ConfigBuilder.groovy:821)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:368)
+	at nextflow.cli.Launcher.run(Launcher.groovy:526)
+	at nextflow.cli.Launcher.main(Launcher.groovy:686)

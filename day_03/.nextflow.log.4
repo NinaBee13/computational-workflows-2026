@@ -1,0 +1,449 @@
+Sep-30 13:09:38.767 [main] DEBUG nextflow.cli.Launcher - $> nextflow run nf-core/differentialabundance -r 2.0.0 -profile docker -c nextflow.config --input sample_sheet.csv --contrasts contrasts.csv --matrix matrix.csv --feature_length_matrix lengths_matrix.csv --features features.csv --outdir differentialabundance_output
+Sep-30 13:09:38.880 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.6
+Sep-30 13:09:38.902 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/nina/.nextflow/plugins; core-plugins: nf-amazon@3.9.2,nf-azure@1.22.6,nf-cloudcache@0.6.0,nf-codecommit@0.5.3,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.21.1,nf-tower@1.28.2,nf-wave@1.21.0
+Sep-30 13:09:38.924 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-30 13:09:38.925 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-30 13:09:38.929 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
+Sep-30 13:09:38.944 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Sep-30 13:09:39.043 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
+Sep-30 13:09:39.050 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-30 13:09:39.061 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /home/nina/.nextflow/scm
+Sep-30 13:09:39.074 [main] DEBUG nextflow.scm.AssetManager - Selecting multi-revision strategy
+Sep-30 13:09:39.179 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+Sep-30 13:09:39.750 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/bare/config; branch: master; remote: origin; url: https://github.com/nf-core/differentialabundance.git
+Sep-30 13:09:39.779 [main] DEBUG nextflow.scm.RepositoryFactory - Found Git repository result: [RepositoryFactory]
+Sep-30 13:09:39.787 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/bare/config; branch: master; remote: origin; url: https://github.com/nf-core/differentialabundance.git
+Sep-30 13:09:40.531 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/nextflow.config
+Sep-30 13:09:40.532 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/nina/computational-workflows-2026/day_03/nextflow.config
+Sep-30 13:09:40.533 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /home/nina/computational-workflows-2026/day_03/nextflow.config
+Sep-30 13:09:40.534 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/nextflow.config
+Sep-30 13:09:40.535 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/nina/computational-workflows-2026/day_03/nextflow.config
+Sep-30 13:09:40.535 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/nina/computational-workflows-2026/day_03/nextflow.config
+Sep-30 13:09:40.538 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+Sep-30 13:09:40.547 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Sep-30 13:09:41.482 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Sep-30 13:09:41.496 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Sep-30 13:09:41.502 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [debug, conda, mamba, docker, arm64, emulate_amd64, singularity, podman, shifter, charliecloud, apptainer, wave, gpu, rnaseq, rnaseq_deseq2_gsea, rnaseq_deseq2_gprofiler2, rnaseq_limma, rnaseq_limma_gsea, rnaseq_limma_gprofiler2, rnaseq_limma_decoupler, rnaseq_dream, rnaseq_dream_decoupler, rnaseq_propd, rnaseq_propd_grea, affy, affy_limma_gsea, affy_limma_gprofiler2, maxquant, soft, generic_matrix, generic_matrix_dream, test, test_full, cache_default, test_rnaseq_deseq2_gsea, test_rnaseq_deseq2_gprofiler2, test_rnaseq_limma_gsea, test_rnaseq_limma_gprofiler2, test_rnaseq_limma_decoupler, test_rnaseq_dream_decoupler, test_rnaseq_propd_grea, test_affy_limma_gsea, test_affy_limma_gprofiler2, test_maxquant, test_soft, abims, adcra, alice, alliance_canada, apollo, arcc, aws_tower, awsbatch, azurebatch, bi, bigpurple, bih, binac2, biohpc_gen, biowulf, bluebear, cambridge, cannon, cbe, ccga_dx, ccga_cau, ceci_dragon2, ceci_nic5, cedars, ceres, cfc, cfc_dev, cheaha, computerome, create, crg, crick, cropdiversityhpc, crukmi, csiro_petrichor, czbiohub_aws, daisybio, denbi_qbic, dkfz, dirac, ebc, eddie, ebi_codon, ebi_codon_slurm, einstein, embl_hd, engaging, ethz_euler, eva, eva_grace, fgcz, fred_hutch, fsu_draco, fub_curta, genotoul, genouest, giga, gis, googlebatch, hasta, hazel, hki_genie, hypatia, humantechnopole, icr_alma, ifb_core, imb, imperial, incliva, ipop_up, iris, janelia, jax, jex, unsw_katana, ku_sund_danhead, kaust, kelvin2, ki_luria, leicester, lovelace, lrz_cm4, lugh, m3c, maestro, mahuika, mana, marjorie, marvin, mccleary, mcw_rcc, medair, mjolnir_globe, mpcdf, mpcdf_viper, mssm, munin, naiss, nci_gadi, nu_genomics, nygc, nyu_hpc, oist, palmetto, pasteur, pawsey_setonix, pdc_kth, phoenix, psmn, purdue_bell, purdue_gautschi, purdue_negishi, qmul_apocrita, rki, rosalind, rosalind_uge, roslin, saga_sigma2, sage, sahmri, sanger, ilifu, seadragon, seattlechildrens, seawulf, seg_globe, self_hosted_runner, shu_bmrc, stjude, tes, tigem, tubingen_apg, tufts, tuos_stanage, ucd_sonic, ucl_cscluster, ucl_myriad, uct_hpc, uge, unc_lccc, unc_longleaf, unibe_ibu, unity, uod_hpc, uppmax, utd_juno, uw_hyak_pedslabs, uzh, uzl_omics, vai, verily_workbench, vsc_calcua, vsc_kul_uhasselt, vsc_ugent, wehi, xanadu, york_viking]
+Sep-30 13:09:41.556 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins declared=[nf-schema@2.5.1]
+Sep-30 13:09:41.557 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-30 13:09:41.557 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-schema@2.5.1]
+Sep-30 13:09:41.559 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-schema version: 2.5.1
+Sep-30 13:09:41.567 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-schema@2.5.1' resolved
+Sep-30 13:09:41.567 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-schema@2.5.1'
+Sep-30 13:09:41.571 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-schema@2.5.1
+Sep-30 13:09:41.575 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/nina/.nextflow/secrets/store.json
+Sep-30 13:09:41.577 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@5d08976a] - activable => nextflow.secret.LocalSecretsProvider@5d08976a
+Sep-30 13:09:41.578 [main] DEBUG nextflow.cli.CmdRun - Launching `https://github.com/nf-core/differentialabundance` [goofy_tesla] - revision: 30ed7741fc [2.0.0]
+Sep-30 13:09:41.580 [main] ERROR org.pf4j.AbstractExtensionFinder - Different class loaders: 'org.pf4j.PluginClassLoader@43786627' (E) and 'jdk.internal.loader.ClassLoaders$AppClassLoader@5bc2b487' (EP)
+Sep-30 13:09:41.607 [main] WARN  nextflow.config.ConfigValidator - Unrecognized config option 'validation.defaultIgnoreParams'
+Sep-30 13:09:41.607 [main] WARN  nextflow.config.ConfigValidator - Unrecognized config option 'validation.monochromeLogs'
+Sep-30 13:09:41.658 [main] DEBUG nextflow.Session - Session UUID: edb0c954-cd0b-496b-bd6b-24ca97b8175c
+Sep-30 13:09:41.659 [main] DEBUG nextflow.Session - Run name: goofy_tesla
+Sep-30 13:09:41.659 [main] DEBUG nextflow.Session - Executor pool size: 22
+Sep-30 13:09:41.665 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Sep-30 13:09:41.668 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=66; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-30 13:09:41.681 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 26.04.6 build 12646
+  Created: 09-07-2026 18:49 UTC (20:49 CEST)
+  System: Linux 7.0.0-34-generic
+  Runtime: Groovy 4.0.31 on OpenJDK 64-Bit Server VM 25.0.2-internal-adhoc.rattler.src
+  Encoding: UTF-8 (UTF-8)
+  Process: 221938@nina-Yoga-Slim-7-14IMH9 [127.0.1.1]
+  CPUs: 22 - Mem: 31 GB (8.4 GB) - Swap: 8 GB (8 GB)
+Sep-30 13:09:41.691 [main] DEBUG nextflow.Session - Work-dir: /home/nina/computational-workflows-2026/day_03/work [ext2/ext3]
+Sep-30 13:09:41.692 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/bin
+Sep-30 13:09:41.701 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-30 13:09:41.711 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Sep-30 13:09:41.712 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Sep-30 13:09:41.722 [main] DEBUG nextflow.Session - Observer factory (v2): ValidationObserverFactory
+Sep-30 13:09:41.743 [main] DEBUG nextflow.Session - Unable to resolve dynamic `container` directive -- cause: No such property: workflow for class: nextflow.script.ScriptBinding
+Sep-30 13:09:41.754 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-30 13:09:41.760 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 23; maxThreads: 1000
+Sep-30 13:09:41.870 [main] DEBUG nextflow.Session - Session start
+Sep-30 13:09:41.875 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: differentialabundance_output/pipeline_info/execution_trace_2026-09-30_13-09-40.txt
+Sep-30 13:09:41.877 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
+Sep-30 13:09:44.272 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-30 13:09:44.282 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryLog:paramsSummaryLog]; plugin Id: nf-schema
+Sep-30 13:09:44.289 [main] DEBUG n.validation.config.ValidationConfig - Set `validation.monochromeLogs` to false
+Sep-30 13:09:44.290 [main] DEBUG n.validation.config.ValidationConfig - Added the following parameters to the ignored parameters: [genomes, igenomes_base]
+Sep-30 13:09:44.304 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [validateParameters:validateParameters]; plugin Id: nf-schema
+Sep-30 13:09:44.304 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsHelp:paramsHelp]; plugin Id: nf-schema
+Sep-30 13:09:44.313 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Sep-30 13:09:44.314 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [validate:validate]; plugin Id: nf-schema
+Sep-30 13:09:44.600 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Sep-30 13:09:44.601 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [validate:validate]; plugin Id: nf-schema
+Sep-30 13:09:44.682 [main] INFO  nextflow.Nextflow - 
+-[2m----------------------------------------------------[0m-
+                                        [0;32m,--.[0;30m/[0;32m,-.[0m
+[0;34m        ___     __   __   __   ___     [0;32m/,-._.--~'[0m
+[0;34m  |\ | |__  __ /  ` /  \ |__) |__         [0;33m}  {[0m
+[0;34m  | \| |       \__, \__/ |  \ |___     [0;32m\`-._,-`-,[0m
+                                        [0;32m`._,._,'[0m
+[0;35m  nf-core/differentialabundance 2.0.0[0m
+-[2m----------------------------------------------------[0m-
+
+Sep-30 13:09:44.728 [main] INFO  nextflow.Nextflow - [1m[base] Input/output options[0m
+  [0;34minput                       : [0;32msample_sheet.csv[0m
+  [0;34mcontrasts                   : [0;32mcontrasts.csv[0m
+  [0;34moutdir                      : [0;32mdifferentialabundance_output[0m
+
+[1m[base] Abundance values[0m
+  [0;34mmatrix                      : [0;32mmatrix.csv[0m
+  [0;34mfeature_length_matrix       : [0;32mlengths_matrix.csv[0m
+
+[1m[base] Features options[0m
+  [0;34mfeatures                    : [0;32mfeatures.csv[0m
+
+[1m[preprocessing] Filtering[0m
+  [0;34mfiltering_min_abundance     : [0;32m1[0m
+  [0;34mfiltering_min_samples       : [0;32m1.0[0m
+
+[1m[differential] Differential analysis[0m
+  [0;34mdifferential_min_fold_change: [0;32m2.0[0m
+  [0;34mdifferential_max_pval       : [0;32m1.0[0m
+
+[1m[differential] Limma specific options[0m
+  [0;34mlimma_p_value               : [0;32m1.0[0m
+
+[1mGeneric options[0m
+  [0;34mtrace_report_suffix         : [0;32m2026-09-30_13-09-40[0m
+
+[1mCore Nextflow options[0m
+  [0;34mrevision                    : [0;32m2.0.0[0m
+  [0;34mrunName                     : [0;32mgoofy_tesla[0m
+  [0;34mcontainerEngine             : [0;32mdocker[0m
+  [0;34mcontainer.QUARTONOTEBOOK    : [0;32m(dynamic resolved)[0m
+  [0;34mlaunchDir                   : [0;32m/home/nina/computational-workflows-2026/day_03[0m
+  [0;34mworkDir                     : [0;32m/home/nina/computational-workflows-2026/day_03/work[0m
+  [0;34mprojectDir                  : [0;32m/home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b[0m
+  [0;34muserName                    : [0;32mnina[0m
+  [0;34mprofile                     : [0;32mdocker[0m
+  [0;34mconfigFiles                 : [0;32m/home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/nextflow.config, /home/nina/computational-workflows-2026/day_03/nextflow.config, /home/nina/computational-workflows-2026/day_03/nextflow.config[0m
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+-[2m----------------------------------------------------[0m-
+Sep-30 13:09:44.729 [main] INFO  nextflow.Nextflow - 
+* The pipeline
+    https://doi.org/10.5281/zenodo.7568000
+
+* The nf-core framework
+    https://doi.org/10.1038/s41587-020-0439-x
+* Software dependencies
+    https://github.com/nf-core/differentialabundance/blob/master/CITATIONS.md
+
+Sep-30 13:09:44.841 [main] DEBUG n.v.v.evaluators.SchemaEvaluator - Started validating /home/nina/computational-workflows-2026/day_03/sample_sheet.csv
+Sep-30 13:09:44.868 [main] DEBUG n.v.v.evaluators.SchemaEvaluator - Validation of file 'sample_sheet.csv' passed!
+Sep-30 13:09:44.870 [main] DEBUG n.v.v.evaluators.SchemaEvaluator - Started validating /home/nina/computational-workflows-2026/day_03/contrasts.csv
+Sep-30 13:09:44.883 [main] DEBUG n.v.v.evaluators.SchemaEvaluator - Validation of file 'contrasts.csv' passed!
+Sep-30 13:09:44.951 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:UNTAR
+Sep-30 13:09:44.954 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:44.954 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:44.958 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Sep-30 13:09:44.962 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=22; memory=31 GB; capacity=22; pollInterval=100ms; dumpInterval=5m
+Sep-30 13:09:44.964 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Sep-30 13:09:44.987 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:UNTAR': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.042 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:AFFY_JUSTRMA_RAW
+Sep-30 13:09:45.046 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:AFFY_JUSTRMA_RAW` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:AFFY_JUSTRMA_RAW
+Sep-30 13:09:45.053 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.053 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.055 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:AFFY_JUSTRMA_RAW': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.062 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:AFFY_JUSTRMA_NORM
+Sep-30 13:09:45.063 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:AFFY_JUSTRMA_NORM` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:AFFY_JUSTRMA_NORM
+Sep-30 13:09:45.066 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.066 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.067 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:AFFY_JUSTRMA_NORM': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.086 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:PROTEUS
+Sep-30 13:09:45.089 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:PROTEUS` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:PROTEUS
+Sep-30 13:09:45.091 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.091 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.092 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:PROTEUS': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.120 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:GEOQUERY_GETGEO
+Sep-30 13:09:45.121 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:GEOQUERY_GETGEO` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:GEOQUERY_GETGEO
+Sep-30 13:09:45.122 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.122 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.123 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:GEOQUERY_GETGEO': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.165 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:GUNZIP_GTF
+Sep-30 13:09:45.168 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.169 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.170 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:GUNZIP_GTF': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.186 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:GTF_TO_TABLE
+Sep-30 13:09:45.189 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:GTF_TO_TABLE` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:GTF_TO_TABLE
+Sep-30 13:09:45.192 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.192 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.194 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:GTF_TO_TABLE': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.234 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:VALIDATOR
+Sep-30 13:09:45.235 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:VALIDATOR` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:VALIDATOR
+Sep-30 13:09:45.236 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.236 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.237 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:VALIDATOR': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.264 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:CUSTOM_MATRIXFILTER
+Sep-30 13:09:45.264 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:CUSTOM_MATRIXFILTER` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:CUSTOM_MATRIXFILTER
+Sep-30 13:09:45.266 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.267 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.267 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:CUSTOM_MATRIXFILTER': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.297 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:LIMMA_NORM
+Sep-30 13:09:45.297 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:LIMMA_DIFFERENTIAL` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:LIMMA_NORM
+Sep-30 13:09:45.298 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:LIMMA_NORM` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:LIMMA_NORM
+Sep-30 13:09:45.299 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.299 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.300 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:LIMMA_NORM': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.309 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:LIMMA_DIFFERENTIAL
+Sep-30 13:09:45.310 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:LIMMA_DIFFERENTIAL` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:LIMMA_DIFFERENTIAL
+Sep-30 13:09:45.311 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.312 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.312 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:LIMMA_DIFFERENTIAL': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.328 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:DESEQ2_NORM
+Sep-30 13:09:45.328 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:DESEQ2_DIFFERENTIAL` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:DESEQ2_NORM
+Sep-30 13:09:45.329 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:DESEQ2_NORM` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:DESEQ2_NORM
+Sep-30 13:09:45.329 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.329 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.330 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:DESEQ2_NORM': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.339 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:DESEQ2_DIFFERENTIAL
+Sep-30 13:09:45.339 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:DESEQ2_DIFFERENTIAL` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:DESEQ2_DIFFERENTIAL
+Sep-30 13:09:45.340 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.340 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.341 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:DESEQ2_DIFFERENTIAL': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.351 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:PROPR_PROPD
+Sep-30 13:09:45.352 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:PROPR_PROPD` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:PROPR_PROPD
+Sep-30 13:09:45.353 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.353 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.354 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:PROPR_PROPD': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.364 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_high` matches labels `process_high` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:DREAM_NORM
+Sep-30 13:09:45.364 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:VARIANCEPARTITION_DREAM` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:DREAM_NORM
+Sep-30 13:09:45.365 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:DREAM_NORM` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:DREAM_NORM
+Sep-30 13:09:45.365 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.366 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.366 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:DREAM_NORM': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.369 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_high` matches labels `process_high` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:VARIANCEPARTITION_DREAM
+Sep-30 13:09:45.370 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:VARIANCEPARTITION_DREAM` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:VARIANCEPARTITION_DREAM
+Sep-30 13:09:45.370 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.371 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.371 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:VARIANCEPARTITION_DREAM': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.386 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:CUSTOM_FILTERDIFFERENTIALTABLE
+Sep-30 13:09:45.387 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:CUSTOM_FILTERDIFFERENTIALTABLE` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:CUSTOM_FILTERDIFFERENTIALTABLE
+Sep-30 13:09:45.387 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.387 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.388 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:CUSTOM_FILTERDIFFERENTIALTABLE': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.406 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:CSVTK_JOIN
+Sep-30 13:09:45.407 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:CSVTK_JOIN` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:CSVTK_JOIN
+Sep-30 13:09:45.408 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.408 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.409 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:CSVTK_JOIN': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.444 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:DIFFERENTIAL_FUNCTIONAL_ENRICHMENT:GPROFILER2_GOST
+Sep-30 13:09:45.444 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:GPROFILER2_GOST` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:DIFFERENTIAL_FUNCTIONAL_ENRICHMENT:GPROFILER2_GOST
+Sep-30 13:09:45.445 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.445 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.446 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:DIFFERENTIAL_FUNCTIONAL_ENRICHMENT:GPROFILER2_GOST': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.448 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:DIFFERENTIAL_FUNCTIONAL_ENRICHMENT:CUSTOM_TABULARTOGSEAGCT
+Sep-30 13:09:45.449 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.449 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.450 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:DIFFERENTIAL_FUNCTIONAL_ENRICHMENT:CUSTOM_TABULARTOGSEAGCT': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.452 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:DIFFERENTIAL_FUNCTIONAL_ENRICHMENT:CUSTOM_TABULARTOGSEACLS
+Sep-30 13:09:45.452 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:CUSTOM_TABULARTOGSEACLS` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:DIFFERENTIAL_FUNCTIONAL_ENRICHMENT:CUSTOM_TABULARTOGSEACLS
+Sep-30 13:09:45.453 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.453 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.454 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:DIFFERENTIAL_FUNCTIONAL_ENRICHMENT:CUSTOM_TABULARTOGSEACLS': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.456 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:DIFFERENTIAL_FUNCTIONAL_ENRICHMENT:CUSTOM_TABULARTOGSEACHIP
+Sep-30 13:09:45.457 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.457 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.457 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:DIFFERENTIAL_FUNCTIONAL_ENRICHMENT:CUSTOM_TABULARTOGSEACHIP': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.464 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:DIFFERENTIAL_FUNCTIONAL_ENRICHMENT:GSEA_GSEA
+Sep-30 13:09:45.464 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:GSEA_GSEA` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:DIFFERENTIAL_FUNCTIONAL_ENRICHMENT:GSEA_GSEA
+Sep-30 13:09:45.465 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.465 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.466 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:DIFFERENTIAL_FUNCTIONAL_ENRICHMENT:GSEA_GSEA': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.473 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:DIFFERENTIAL_FUNCTIONAL_ENRICHMENT:DECOUPLER_DECOUPLER
+Sep-30 13:09:45.473 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:DECOUPLER_DECOUPLER` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:DIFFERENTIAL_FUNCTIONAL_ENRICHMENT:DECOUPLER_DECOUPLER
+Sep-30 13:09:45.474 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.474 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.474 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:DIFFERENTIAL_FUNCTIONAL_ENRICHMENT:DECOUPLER_DECOUPLER': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.477 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_high` matches labels `process_high` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:DIFFERENTIAL_FUNCTIONAL_ENRICHMENT:PROPR_GREA
+Sep-30 13:09:45.478 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:PROPR_GREA` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:DIFFERENTIAL_FUNCTIONAL_ENRICHMENT:PROPR_GREA
+Sep-30 13:09:45.479 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.479 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.479 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:DIFFERENTIAL_FUNCTIONAL_ENRICHMENT:PROPR_GREA': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.504 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:PLOT_EXPLORATORY
+Sep-30 13:09:45.505 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:PLOT_EXPLORATORY` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:PLOT_EXPLORATORY
+Sep-30 13:09:45.506 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.506 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.506 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:PLOT_EXPLORATORY': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.516 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:PLOT_DIFFERENTIAL
+Sep-30 13:09:45.517 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:PLOT_DIFFERENTIAL` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:PLOT_DIFFERENTIAL
+Sep-30 13:09:45.518 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.518 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.519 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:PLOT_DIFFERENTIAL': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.548 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:SHINYNGS_APP
+Sep-30 13:09:45.549 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:SHINYNGS_APP` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:SHINYNGS_APP
+Sep-30 13:09:45.549 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.550 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.550 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:SHINYNGS_APP': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.583 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:QUARTONOTEBOOK
+Sep-30 13:09:45.584 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:QUARTONOTEBOOK` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:QUARTONOTEBOOK
+Sep-30 13:09:45.586 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.586 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.587 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:QUARTONOTEBOOK': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.597 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:MAKE_REPORT_BUNDLE
+Sep-30 13:09:45.598 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:MAKE_REPORT_BUNDLE` matches process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:MAKE_REPORT_BUNDLE
+Sep-30 13:09:45.598 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-30 13:09:45.598 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-30 13:09:45.599 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:MAKE_REPORT_BUNDLE': maxForks=0; fair=false; array=0
+Sep-30 13:09:45.769 [main] DEBUG nextflow.Session - Config process names validation disabled as requested
+Sep-30 13:09:45.771 [main] DEBUG nextflow.Session - Igniting dataflow network (38)
+Sep-30 13:09:45.772 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:UNTAR
+Sep-30 13:09:45.772 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:AFFY_JUSTRMA_RAW
+Sep-30 13:09:45.772 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:AFFY_JUSTRMA_NORM
+Sep-30 13:09:45.772 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:PROTEUS
+Sep-30 13:09:45.772 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:GEOQUERY_GETGEO
+Sep-30 13:09:45.772 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:GUNZIP_GTF
+Sep-30 13:09:45.772 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:GTF_TO_TABLE
+Sep-30 13:09:45.772 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:VALIDATOR
+Sep-30 13:09:45.772 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:CUSTOM_MATRIXFILTER
+Sep-30 13:09:45.772 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:LIMMA_NORM
+Sep-30 13:09:45.772 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:LIMMA_DIFFERENTIAL
+Sep-30 13:09:45.772 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:DESEQ2_NORM
+Sep-30 13:09:45.772 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:DESEQ2_DIFFERENTIAL
+Sep-30 13:09:45.772 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:PROPR_PROPD
+Sep-30 13:09:45.772 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:DREAM_NORM
+Sep-30 13:09:45.773 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:VARIANCEPARTITION_DREAM
+Sep-30 13:09:45.773 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:CUSTOM_FILTERDIFFERENTIALTABLE
+Sep-30 13:09:45.773 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:CSVTK_JOIN
+Sep-30 13:09:45.773 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:DIFFERENTIAL_FUNCTIONAL_ENRICHMENT:GPROFILER2_GOST
+Sep-30 13:09:45.773 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:DIFFERENTIAL_FUNCTIONAL_ENRICHMENT:CUSTOM_TABULARTOGSEAGCT
+Sep-30 13:09:45.773 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:DIFFERENTIAL_FUNCTIONAL_ENRICHMENT:CUSTOM_TABULARTOGSEACLS
+Sep-30 13:09:45.773 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:DIFFERENTIAL_FUNCTIONAL_ENRICHMENT:CUSTOM_TABULARTOGSEACHIP
+Sep-30 13:09:45.773 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:DIFFERENTIAL_FUNCTIONAL_ENRICHMENT:GSEA_GSEA
+Sep-30 13:09:45.774 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:DIFFERENTIAL_FUNCTIONAL_ENRICHMENT:DECOUPLER_DECOUPLER
+Sep-30 13:09:45.775 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:DIFFERENTIAL_FUNCTIONAL_ENRICHMENT:PROPR_GREA
+Sep-30 13:09:45.775 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:PLOT_EXPLORATORY
+Sep-30 13:09:45.775 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:PLOT_DIFFERENTIAL
+Sep-30 13:09:45.775 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:SHINYNGS_APP
+Sep-30 13:09:45.775 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:QUARTONOTEBOOK
+Sep-30 13:09:45.775 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:MAKE_REPORT_BUNDLE
+Sep-30 13:09:45.776 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  _nf_script_7ae1cc7f6fd34b34: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/subworkflows/nf-core/differential_functional_enrichment/main.nf
+  _nf_script_d4c2130bc9d5c913: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/modules/nf-core/propr/grea/main.nf
+  _nf_script_e641fc4fd6fd9bba: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/modules/nf-core/gprofiler2/gost/main.nf
+  _nf_script_0536772f1db3b3a6: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/modules/nf-core/custom/filterdifferentialtable/main.nf
+  _nf_script_9fcdad5182208e18: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/modules/nf-core/shinyngs/staticexploratory/main.nf
+  _nf_script_b73427c0286700af: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/modules/nf-core/geoquery/getgeo/main.nf
+  _nf_script_d49182fab86a179c: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/modules/nf-core/propr/propd/main.nf
+  _nf_script_8454627e4d7e8fbd: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/modules/nf-core/shinyngs/staticdifferential/main.nf
+  _nf_script_0345f39a1d693b18: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/modules/nf-core/custom/tabulartogseagct/main.nf
+  _nf_script_bfc09f69528f1854: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/subworkflows/nf-core/utils_nfschema_plugin/main.nf
+  _nf_script_684be12888974785: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/modules/nf-core/custom/tabulartogseachip/main.nf
+  _nf_script_2a5490faeaed9d58: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/subworkflows/nf-core/abundance_differential_filter/main.nf
+  _nf_script_3b8a850627cd560c: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/modules/nf-core/decoupler/decoupler/main.nf
+  _nf_script_bed281f8e445d49c: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/subworkflows/nf-core/utils_nfcore_pipeline/main.nf
+  _nf_script_189954ed473d6004: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/subworkflows/local/utils_nfcore_differentialabundance_pipeline/main.nf
+  _nf_script_95384ea40941a996: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/subworkflows/nf-core/utils_nextflow_pipeline/main.nf
+  _nf_script_9fd786e02e383566: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/modules/nf-core/limma/differential/main.nf
+  _nf_script_ca48f7ac3c2255b4: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/modules/nf-core/proteus/readproteingroups/main.nf
+  _nf_script_5a9fb37739efb422: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/modules/nf-core/custom/tabulartogseacls/main.nf
+  _nf_script_69ebaef575d6a77f: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/modules/nf-core/atlasgeneannotationmanipulation/gtf2featureannotation/main.nf
+  _nf_script_f2b1726424944fe2: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/workflows/differentialabundance.nf
+  _nf_script_55a21f276509e3a9: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/modules/nf-core/custom/matrixfilter/main.nf
+  _nf_script_d7180f5ec346a01f: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/modules/nf-core/shinyngs/validatefomcomponents/main.nf
+  _nf_script_4bc7d0b7d1f73f8b: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/modules/nf-core/affy/justrma/main.nf
+  _nf_script_4efd71c46da5c961: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/modules/nf-core/gunzip/main.nf
+  _nf_script_4c2715be1476bb6d: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/modules/nf-core/csvtk/join/main.nf
+  _nf_script_53e4fdeb684551a6: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/modules/nf-core/shinyngs/app/main.nf
+  _nf_script_526007931253ec04: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/modules/nf-core/gsea/gsea/main.nf
+  _nf_script_2d4d7e0dd5c51d8a: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/modules/nf-core/variancepartition/dream/main.nf
+  _nf_script_6f4a111683340761: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/modules/nf-core/deseq2/differential/main.nf
+  _nf_script_ae42aa6c519dc52f: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/modules/nf-core/quartonotebook/main.nf
+  _nf_script_7b320f51874750c9: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/modules/nf-core/zip/main.nf
+  _nf_script_c3fe6a1508291631: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/modules/nf-core/untar/main.nf
+  Main: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/main.nf
+Sep-30 13:09:45.776 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Sep-30 13:09:45.776 [main] DEBUG nextflow.Session - Session await
+Sep-30 13:09:45.970 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-30 13:09:45.972 [Task submitter] INFO  nextflow.Session - [46/bcff54] Submitted process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:VALIDATOR (sample_sheet.csv)
+Sep-30 13:09:54.330 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:VALIDATOR (sample_sheet.csv); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_03/work/46/bcff54bfd6be8f69b5538ae96e8fb5]
+Sep-30 13:09:54.330 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=66; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-30 13:09:54.525 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-30 13:09:54.526 [Task submitter] INFO  nextflow.Session - [09/551517] Submitted process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:CUSTOM_MATRIXFILTER (study)
+Sep-30 13:10:05.549 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:CUSTOM_MATRIXFILTER (study); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_03/work/09/551517a2407c4fba793efb2ea573bb]
+Sep-30 13:10:05.654 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-30 13:10:05.654 [Task submitter] INFO  nextflow.Session - [d3/42e088] Submitted process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:DESEQ2_DIFFERENTIAL (condition_control_treated_test_study)
+Sep-30 13:10:05.660 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-30 13:10:05.660 [Task submitter] INFO  nextflow.Session - [68/7b867e] Submitted process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:DESEQ2_DIFFERENTIAL (condition_control_treated_study)
+Sep-30 13:10:05.666 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-30 13:10:05.666 [Task submitter] INFO  nextflow.Session - [35/74c862] Submitted process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:DESEQ2_NORM (study)
+Sep-30 13:10:38.602 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:DESEQ2_DIFFERENTIAL (condition_control_treated_test_study); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_03/work/d3/42e0886216c5c5fec44a846f56ae34]
+Sep-30 13:10:38.671 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:DESEQ2_NORM (study); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_03/work/35/74c8622318e04d5fc382c41b2a1e72]
+Sep-30 13:10:38.689 [TaskFinalizer-3] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:DESEQ2_DIFFERENTIAL > Skipping output binding because one or more optional files are missing: fileoutparam<6:1>
+Sep-30 13:10:38.689 [TaskFinalizer-4] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:DESEQ2_NORM > Skipping output binding because one or more optional files are missing: fileoutparam<6:1>
+Sep-30 13:10:38.707 [Actor Thread 18] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=66; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-30 13:10:38.709 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-30 13:10:38.709 [Task submitter] INFO  nextflow.Session - [1d/f24634] Submitted process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:CUSTOM_FILTERDIFFERENTIALTABLE (condition_control_treated_test_study)
+Sep-30 13:10:38.733 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-30 13:10:38.734 [Task submitter] INFO  nextflow.Session - [c8/cf62a0] Submitted process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:PLOT_EXPLORATORY (Condition)
+Sep-30 13:10:39.295 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:DESEQ2_DIFFERENTIAL (condition_control_treated_study); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_03/work/68/7b867efe8a50503924862d7dfbc566]
+Sep-30 13:10:39.305 [TaskFinalizer-5] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:DESEQ2_DIFFERENTIAL > Skipping output binding because one or more optional files are missing: fileoutparam<6:1>
+Sep-30 13:10:39.319 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-30 13:10:39.320 [Task submitter] INFO  nextflow.Session - [78/ff0f74] Submitted process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:CUSTOM_FILTERDIFFERENTIALTABLE (condition_control_treated_study)
+Sep-30 13:10:39.341 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-30 13:10:39.342 [Task submitter] INFO  nextflow.Session - [95/6623a9] Submitted process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:CSVTK_JOIN (condition_control_treated_test_study)
+Sep-30 13:10:39.400 [Actor Thread 8] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 1; slices: 1; internal sort time: 0.001 s; external sort time: 0.011 s; total time: 0.012 s
+Sep-30 13:10:39.400 [Actor Thread 23] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 1; slices: 1; internal sort time: 0.001 s; external sort time: 0.011 s; total time: 0.012 s
+Sep-30 13:10:39.408 [Actor Thread 8] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /home/nina/computational-workflows-2026/day_03/work/collect-file/0eb30cd0acfd2507ef2212eb344c8b0f
+Sep-30 13:10:39.408 [Actor Thread 23] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /home/nina/computational-workflows-2026/day_03/work/collect-file/f7f3746a36b76c9240b31d430969ec43
+Sep-30 13:10:39.414 [Actor Thread 23] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-14122967874205934343
+Sep-30 13:10:39.414 [Actor Thread 8] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-3779333820881526409
+Sep-30 13:10:40.002 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:CSVTK_JOIN (condition_control_treated_test_study); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_03/work/95/6623a929d3cb857e37b9860b5fc1c1]
+Sep-30 13:10:40.009 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-30 13:10:40.009 [Task submitter] INFO  nextflow.Session - [31/0a999d] Submitted process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:CSVTK_JOIN (condition_control_treated_study)
+Sep-30 13:10:40.100 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:CUSTOM_FILTERDIFFERENTIALTABLE (condition_control_treated_test_study); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_03/work/1d/f2463403b211add1f46979a0c3ee53]
+Sep-30 13:10:40.271 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:ABUNDANCE_DIFFERENTIAL_FILTER:CUSTOM_FILTERDIFFERENTIALTABLE (condition_control_treated_study); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_03/work/78/ff0f745b542f23af4de35da1161244]
+Sep-30 13:10:40.277 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-30 13:10:40.277 [Task submitter] INFO  nextflow.Session - [84/898626] Submitted process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:PLOT_DIFFERENTIAL (condition_control_treated_study)
+Sep-30 13:10:40.550 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:CSVTK_JOIN (condition_control_treated_study); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_03/work/31/0a999d395d6a12b31984e990192a42]
+Sep-30 13:10:49.350 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:PLOT_DIFFERENTIAL (condition_control_treated_study); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_03/work/84/898626376080c457d02545cc4cfc6d]
+Sep-30 13:10:49.355 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-30 13:10:49.356 [Task submitter] INFO  nextflow.Session - [3a/2cc689] Submitted process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:PLOT_DIFFERENTIAL (condition_control_treated_test_study)
+Sep-30 13:10:49.357 [TaskFinalizer-10] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:PLOT_DIFFERENTIAL > Skipping output binding because one or more optional files are missing: fileoutparam<1:1>
+Sep-30 13:10:57.872 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:PLOT_EXPLORATORY (Condition); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_03/work/c8/cf62a09467865c5192262969e84447]
+Sep-30 13:10:57.876 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-30 13:10:57.877 [Task submitter] INFO  nextflow.Session - [5a/d745da] Submitted process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:SHINYNGS_APP (study)
+Sep-30 13:10:57.882 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:PLOT_EXPLORATORY > Skipping output binding because one or more optional files are missing: fileoutparam<1:1>
+Sep-30 13:10:57.882 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:PLOT_EXPLORATORY > Skipping output binding because one or more optional files are missing: fileoutparam<3:1>
+Sep-30 13:10:57.882 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:PLOT_EXPLORATORY > Skipping output binding because one or more optional files are missing: fileoutparam<5:1>
+Sep-30 13:10:57.883 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:PLOT_EXPLORATORY > Skipping output binding because one or more optional files are missing: fileoutparam<7:1>
+Sep-30 13:10:57.883 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:PLOT_EXPLORATORY > Skipping output binding because one or more optional files are missing: fileoutparam<9:1>
+Sep-30 13:10:58.471 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:PLOT_DIFFERENTIAL (condition_control_treated_test_study); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_03/work/3a/2cc689b55535a5f33b04410f5c449c]
+Sep-30 13:10:58.475 [TaskFinalizer-2] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:PLOT_DIFFERENTIAL > Skipping output binding because one or more optional files are missing: fileoutparam<1:1>
+Sep-30 13:11:08.273 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:SHINYNGS_APP (study); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_03/work/5a/d745dac3cc643b0998460e241b92f4]
+Sep-30 13:11:08.283 [Actor Thread 15] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 10; slices: 1; internal sort time: 0.002 s; external sort time: 0.001 s; total time: 0.003 s
+Sep-30 13:11:08.284 [Actor Thread 25] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 10; slices: 1; internal sort time: 0.004 s; external sort time: 0.0 s; total time: 0.004 s
+Sep-30 13:11:08.288 [Actor Thread 15] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /home/nina/computational-workflows-2026/day_03/work/collect-file/03641e6ecaebbd4ca5811c1105258482
+Sep-30 13:11:08.289 [Actor Thread 15] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-8776928059244354007
+Sep-30 13:11:08.292 [Actor Thread 25] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /home/nina/computational-workflows-2026/day_03/work/collect-file/ec70063bbfb38dfe910c6057633b5f08
+Sep-30 13:11:08.293 [Actor Thread 25] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-13014911122881932262
+Sep-30 13:11:08.391 [Actor Thread 29] DEBUG nextflow.util.HashBuilder - Hash asset file sha-256: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/assets/differentialabundance_report.qmd
+Sep-30 13:11:08.396 [Actor Thread 29] DEBUG nextflow.util.HashBuilder - Hash asset file sha-256: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/docs/images/nf-core-differentialabundance_logo_light.png
+Sep-30 13:11:08.397 [Actor Thread 29] DEBUG nextflow.util.HashBuilder - Hash asset file sha-256: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/assets/nf-core_style.css
+Sep-30 13:11:08.397 [Actor Thread 29] DEBUG nextflow.util.HashBuilder - Hash asset file sha-256: /home/nina/.nextflow/assets/.repos/nf-core/differentialabundance/clones/30ed7741fc392127156c2fb10cfa3d69d216b54b/CITATIONS.md
+Sep-30 13:11:08.404 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-30 13:11:08.405 [Task submitter] INFO  nextflow.Session - [9b/29fa70] Submitted process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:QUARTONOTEBOOK (study)
+Sep-30 13:11:53.964 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 14; name: NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:QUARTONOTEBOOK (study); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_03/work/9b/29fa70cb6226299ff2f9c3efe9b22b]
+Sep-30 13:11:53.967 [TaskFinalizer-3] DEBUG n.processor.TaskFileCollector - Process `NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:QUARTONOTEBOOK (study)` is unable to find [UnixPath]: `/home/nina/computational-workflows-2026/day_03/work/9b/29fa70cb6226299ff2f9c3efe9b22b/_extensions` (pattern: `_extensions`)
+Sep-30 13:11:53.970 [TaskFinalizer-3] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:QUARTONOTEBOOK > Skipping output binding because one or more optional files are missing: fileoutparam<3:1>
+Sep-30 13:11:53.970 [TaskFinalizer-3] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:QUARTONOTEBOOK > Skipping output binding because one or more optional files are missing: fileoutparam<4:1>
+Sep-30 13:11:53.991 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-30 13:11:53.991 [Task submitter] INFO  nextflow.Session - [4d/0c73cf] Submitted process > NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:MAKE_REPORT_BUNDLE (study)
+Sep-30 13:11:55.222 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 15; name: NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:MAKE_REPORT_BUNDLE (study); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_03/work/4d/0c73cf9e7b8c48d59489b75be55c44]
+Sep-30 13:11:55.229 [main] DEBUG nextflow.Session - Session await > all processes finished
+Sep-30 13:11:55.323 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Sep-30 13:11:55.323 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sep-30 13:11:55.327 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Sep-30 13:11:55.328 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Sep-30 13:11:55.330 [main] INFO  nextflow.Nextflow - -[0;35m[nf-core/differentialabundance][0;32m Pipeline completed successfully[0m-
+Sep-30 13:11:55.396 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=15; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=4m 15s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=4; peakCpus=4; peakMemory=30 GB; ]
+Sep-30 13:11:55.579 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Sep-30 13:11:55.889 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+Sep-30 13:11:55.939 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+Sep-30 13:11:55.946 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Sep-30 13:11:55.952 [main] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-schema@2.5.1'
+Sep-30 13:11:55.953 [main] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-schema
+Sep-30 13:11:55.953 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Sep-30 13:11:55.954 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

@@ -1,0 +1,5 @@
+id,variable,reference,target
+condition_control_treated,Condition,SNI_Sal,SNI_oxy
+condition_control_treated_test,Condition,Sham_Sal,Sham_oxy
+condition_control_treated_Sham_sal_vs_sni_oxy,Condition,Sham_Sal,SNI_oxy
+condition_control_treated_sni_sal_vs_sham_sal,Condition,SNI_Sal,Sham_Sal
