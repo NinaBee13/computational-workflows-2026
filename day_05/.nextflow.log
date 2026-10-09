@@ -1,0 +1,103 @@
+Oct-09 09:58:18.852 [main] DEBUG nextflow.cli.Launcher - $> nextflow run link_p_c.nf
+Oct-09 09:58:19.001 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.6
+Oct-09 09:58:19.033 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/nina/.nextflow/plugins; core-plugins: nf-amazon@3.9.2,nf-azure@1.22.6,nf-cloudcache@0.6.0,nf-codecommit@0.5.3,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.21.1,nf-tower@1.28.2,nf-wave@1.21.0
+Oct-09 09:58:19.062 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Oct-09 09:58:19.064 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Oct-09 09:58:19.067 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
+Oct-09 09:58:19.087 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Oct-09 09:58:19.231 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
+Oct-09 09:58:19.236 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Oct-09 09:58:19.267 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+Oct-09 09:58:19.309 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Oct-09 09:58:19.309 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Oct-09 09:58:19.327 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/nina/.nextflow/secrets/store.json
+Oct-09 09:58:19.337 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@c6a6c1d] - activable => nextflow.secret.LocalSecretsProvider@c6a6c1d
+Oct-09 09:58:19.357 [main] DEBUG nextflow.cli.CmdRun - Launching `link_p_c.nf` [magical_goldstine] - revision: 3ab05c1009
+Oct-09 09:58:19.497 [main] DEBUG nextflow.Session - Session UUID: 423b518f-731a-4625-a5bf-033f2bacf3ad
+Oct-09 09:58:19.498 [main] DEBUG nextflow.Session - Run name: magical_goldstine
+Oct-09 09:58:19.498 [main] DEBUG nextflow.Session - Executor pool size: 22
+Oct-09 09:58:19.508 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Oct-09 09:58:19.516 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=66; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Oct-09 09:58:19.540 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 26.04.6 build 12646
+  Created: 09-07-2026 18:49 UTC (20:49 CEST)
+  System: Linux 7.0.0-34-generic
+  Runtime: Groovy 4.0.31 on OpenJDK 64-Bit Server VM 25.0.2-internal-adhoc.rattler.src
+  Encoding: UTF-8 (UTF-8)
+  Process: 36263@nina-Yoga-Slim-7-14IMH9 [127.0.1.1]
+  CPUs: 22 - Mem: 31 GB (16.4 GB) - Swap: 8 GB (8 GB)
+Oct-09 09:58:19.578 [main] DEBUG nextflow.Session - Work-dir: /home/nina/computational-workflows-2026/day_05/work [ext2/ext3]
+Oct-09 09:58:19.580 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/nina/computational-workflows-2026/day_05/bin
+Oct-09 09:58:19.598 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Oct-09 09:58:19.618 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Oct-09 09:58:19.623 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Oct-09 09:58:19.750 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Oct-09 09:58:19.772 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 23; maxThreads: 1000
+Oct-09 09:58:19.860 [main] DEBUG nextflow.Session - Session start
+Oct-09 09:58:19.870 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
+Oct-09 09:58:20.681 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-09 09:58:21.039 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-09 09:58:21.040 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-09 09:58:21.049 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Oct-09 09:58:21.057 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=22; memory=31 GB; capacity=22; pollInterval=100ms; dumpInterval=5m
+Oct-09 09:58:21.059 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Oct-09 09:58:21.118 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'SPLITLETTERS': maxForks=0; fair=false; array=0
+Oct-09 09:58:21.179 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-09 09:58:21.179 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-09 09:58:21.180 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'CONVERTTOUPPER': maxForks=0; fair=false; array=0
+Oct-09 09:58:21.183 [main] DEBUG nextflow.Session - Process names: SPLITLETTERS, CONVERTTOUPPER
+Oct-09 09:58:21.185 [main] DEBUG nextflow.Session - Igniting dataflow network (3)
+Oct-09 09:58:21.192 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SPLITLETTERS
+Oct-09 09:58:21.193 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > CONVERTTOUPPER
+Oct-09 09:58:21.194 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Main: /home/nina/computational-workflows-2026/day_05/link_p_c.nf
+Oct-09 09:58:21.194 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Oct-09 09:58:21.194 [main] DEBUG nextflow.Session - Session await
+Oct-09 09:58:21.484 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-09 09:58:21.487 [Task submitter] INFO  nextflow.Session - [6e/a8fb94] Submitted process > SPLITLETTERS (2)
+Oct-09 09:58:21.500 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-09 09:58:21.501 [Task submitter] INFO  nextflow.Session - [2c/bf9852] Submitted process > SPLITLETTERS (1)
+Oct-09 09:58:21.548 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: SPLITLETTERS (2); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_05/work/6e/a8fb946d1df0ce64bad8e6da75e91f]
+Oct-09 09:58:21.549 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=66; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Oct-09 09:58:21.553 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: SPLITLETTERS (1); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_05/work/2c/bf9852996e338e6dcd8cc6fef14669]
+Oct-09 09:58:21.629 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-09 09:58:21.630 [Task submitter] INFO  nextflow.Session - [b7/42ab78] Submitted process > CONVERTTOUPPER (1)
+Oct-09 09:58:21.642 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-09 09:58:21.643 [Task submitter] INFO  nextflow.Session - [2e/54e6e3] Submitted process > CONVERTTOUPPER (10)
+Oct-09 09:58:21.646 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-09 09:58:21.647 [Task submitter] INFO  nextflow.Session - [5e/29f893] Submitted process > CONVERTTOUPPER (6)
+Oct-09 09:58:21.651 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-09 09:58:21.651 [Task submitter] INFO  nextflow.Session - [6a/a11365] Submitted process > CONVERTTOUPPER (9)
+Oct-09 09:58:21.653 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: CONVERTTOUPPER (1); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_05/work/b7/42ab78b6345631af2cec292b7d89ee]
+Oct-09 09:58:21.656 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-09 09:58:21.657 [Task submitter] INFO  nextflow.Session - [4f/19a030] Submitted process > CONVERTTOUPPER (3)
+Oct-09 09:58:21.660 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: CONVERTTOUPPER (10); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_05/work/2e/54e6e306ea76c4218833b92f19de3e]
+Oct-09 09:58:21.664 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: CONVERTTOUPPER (6); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_05/work/5e/29f893336c070605fa46e817e961db]
+Oct-09 09:58:21.664 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-09 09:58:21.665 [Task submitter] INFO  nextflow.Session - [e3/9a3b0e] Submitted process > CONVERTTOUPPER (7)
+Oct-09 09:58:21.667 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: CONVERTTOUPPER (9); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_05/work/6a/a1136503fbaeb80c537b03618e3f7b]
+Oct-09 09:58:21.672 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-09 09:58:21.673 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: CONVERTTOUPPER (3); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_05/work/4f/19a0302d3a83be0d98b0fbc088bac7]
+Oct-09 09:58:21.673 [Task submitter] INFO  nextflow.Session - [78/977cb0] Submitted process > CONVERTTOUPPER (8)
+Oct-09 09:58:21.679 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-09 09:58:21.680 [Task submitter] INFO  nextflow.Session - [10/30ab9f] Submitted process > CONVERTTOUPPER (2)
+Oct-09 09:58:21.681 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: CONVERTTOUPPER (7); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_05/work/e3/9a3b0e288ed4a2e95fe5a916827fde]
+Oct-09 09:58:21.685 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-09 09:58:21.686 [Task submitter] INFO  nextflow.Session - [9e/e8d43f] Submitted process > CONVERTTOUPPER (5)
+Oct-09 09:58:21.689 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: CONVERTTOUPPER (8); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_05/work/78/977cb0639821e35101268aec42e28a]
+Oct-09 09:58:21.691 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-09 09:58:21.691 [Task submitter] INFO  nextflow.Session - [51/d4fc34] Submitted process > CONVERTTOUPPER (11)
+Oct-09 09:58:21.697 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: CONVERTTOUPPER (2); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_05/work/10/30ab9f0d17e796095f983fa32d1b65]
+Oct-09 09:58:21.698 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-09 09:58:21.699 [Task submitter] INFO  nextflow.Session - [f0/54921e] Submitted process > CONVERTTOUPPER (4)
+Oct-09 09:58:21.701 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: CONVERTTOUPPER (5); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_05/work/9e/e8d43f89c63e92e3ce357867a71314]
+Oct-09 09:58:21.704 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: CONVERTTOUPPER (11); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_05/work/51/d4fc34db2a3c82472bdd00d1122a37]
+Oct-09 09:58:21.717 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: CONVERTTOUPPER (4); status: COMPLETED; exit: 0; error: -; workDir: /home/nina/computational-workflows-2026/day_05/work/f0/54921e12ad263e9dd6cd087f97c6f5]
+Oct-09 09:58:21.722 [main] DEBUG nextflow.Session - Session await > all processes finished
+Oct-09 09:58:21.815 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Oct-09 09:58:21.816 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Oct-09 09:58:21.822 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Oct-09 09:58:21.832 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=13; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=127ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=7; peakCpus=7; peakMemory=0; ]
+Oct-09 09:58:21.925 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Oct-09 09:58:21.962 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Oct-09 09:58:21.963 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
