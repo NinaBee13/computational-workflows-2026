@@ -28,7 +28,7 @@ for i in range(0, len(in_str), block_size):
 }
 
 process CONVERTTOUPPER {
-publishDir '/home/nina/computational-workflows-2026/day_05/results'
+publishDir '/home/nina/computational-workflows-2026/day_05/results',mode: 'copy'
 
 input:
 path chunk

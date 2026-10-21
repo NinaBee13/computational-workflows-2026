@@ -67,7 +67,6 @@ process PRINTUPPER {
  input:
  path upper_file
  
-
  script:
   """
   cat ${upper_file}
@@ -122,7 +121,7 @@ process ZIP2 {
 
 process WRITETOFILE {
  debug true
-publishDir '/home/nina/computational-workflows-2026/day_05/results',saveAs: { 'names.tsv' }
+publishDir '/home/nina/computational-workflows-2026/day_05/results',mode: 'copy',saveAs: { 'names.tsv' }
 
 input: 
 val name_title
@@ -174,7 +173,7 @@ workflow {
     if (params.step == 5) {
         greeting_ch = Channel.of("Hello world!")
         out_ch = UPPERCASE(greeting_ch)
-        out_ch.view()
+        out_ch.view{"Path to output file: ${it}"}
     }
 
     // Task 6 - add another process that reads in the resulting file from UPPERCASE and print the content to the console (debug true). WHAT CHANGED IN THE OUTPUT?
@@ -190,7 +189,8 @@ workflow {
     if (params.step == 7) {
         greeting_ch = Channel.of("Hello world!")
         out_ch = UPPERCASE(greeting_ch)
-        ZIP(out_ch)
+        zip_out = ZIP(out_ch)
+        zip_out.view{"Path to output file: ${it}"}
     }
 
     // Task 8 - Create a process that zips the file created in the UPPERCASE process in "zip", "gzip" AND "bzip2" format. Print out the paths to the zipped files in the console
@@ -198,7 +198,8 @@ workflow {
     if (params.step == 8) {
         greeting_ch = Channel.of("Hello world!")
         out_ch = UPPERCASE(greeting_ch)
-        ZIP2(out_ch)
+        zip_out = ZIP2(out_ch)
+        zip_out.view{"Path to output file: ${it}"}
     }
 
     // Task 9 - Create a process that reads in a list of names and titles from a channel and writes them to a file.

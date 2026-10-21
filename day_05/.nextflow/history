@@ -67,3 +67,187 @@
 2026-10-09 09:58:09	2.8s	jovial_jennings	OK	ee09384321eccb1522e0aa1670e41555	a8543652-8387-4081-a17d-90fe469ade14	nextflow run advanced_channel_operations.nf --step 3 -dump-channels
 2026-10-09 09:58:15	1.7s	amazing_poincare	OK	ee09384321eccb1522e0aa1670e41555	c1293c94-56ef-4ef3-a774-4cb18db898b2	nextflow run advanced_channel_operations.nf --step 4
 2026-10-09 09:58:19	2.9s	magical_goldstine	OK	3ab05c1009d0e2ca18d34a59f0150c0e	423b518f-731a-4625-a5bf-033f2bacf3ad	nextflow run link_p_c.nf
+2026-10-21 15:01:00	1.4s	disturbed_bernard	OK	8667da1c54b262958c3b653074519534	70e1d1a0-e06e-4d71-a21e-1c1366894b5b	nextflow run channels_intro.nf --step 1
+2026-10-21 15:01:03	1.2s	angry_avogadro	OK	8667da1c54b262958c3b653074519534	d19a559a-8e81-41ca-b200-8db5f9ffa9f9	nextflow run channels_intro.nf --step 2
+2026-10-21 15:01:06	1s	nice_bernard	OK	8667da1c54b262958c3b653074519534	70ca71be-c088-4fbd-b582-a0d106cf30d4	nextflow run channels_intro.nf --step 3
+2026-10-21 15:01:09	1.2s	furious_heisenberg	OK	8667da1c54b262958c3b653074519534	90aba49c-f44e-46c0-88de-01956dc2caf0	nextflow run channels_intro.nf --step 4
+2026-10-21 15:01:12	1s	clever_wescoff	OK	8667da1c54b262958c3b653074519534	9afb2a0c-e57a-4572-8bdb-e51ddc642b6c	nextflow run channels_intro.nf --step 5
+2026-10-21 15:01:15	887ms	deadly_shirley	OK	8667da1c54b262958c3b653074519534	6ca9393c-a7a7-462f-afbc-486d735e68bd	nextflow run channels_intro.nf --step 6
+2026-10-21 15:01:17	2s	loving_sinoussi	OK	8667da1c54b262958c3b653074519534	8a6ad097-bf20-45ed-b487-976cae3d478e	nextflow run channels_intro.nf --step 7
+2026-10-21 15:01:21	1.1s	jolly_mclean	OK	28aabc9d0d0873ee281b19b54a1a2871	6f80937d-0d1a-4928-8a50-ea4fd77d55d5	nextflow run basic_channel_operations.nf --step 1
+2026-10-21 15:01:24	1.1s	fabulous_baekeland	OK	28aabc9d0d0873ee281b19b54a1a2871	2587523c-c009-4a4c-8ece-d7985ada3a02	nextflow run basic_channel_operations.nf --step 2
+2026-10-21 15:01:27	1.2s	stupefied_nobel	OK	28aabc9d0d0873ee281b19b54a1a2871	5532c06c-989e-49b7-9951-1a63c67bbadf	nextflow run basic_channel_operations.nf --step 3
+2026-10-21 15:01:30	1.3s	deadly_wegener	OK	28aabc9d0d0873ee281b19b54a1a2871	5fadf7b6-f56e-4a74-bc4e-b5c9109b32ff	nextflow run basic_channel_operations.nf --step 4
+2026-10-21 15:01:33	1.3s	trusting_fourier	OK	28aabc9d0d0873ee281b19b54a1a2871	195c93f3-b0fd-4b02-a496-46442e8cc6c6	nextflow run basic_channel_operations.nf --step 5
+2026-10-21 15:01:36	1.5s	spontaneous_wegener	OK	28aabc9d0d0873ee281b19b54a1a2871	33688944-b75e-431d-987f-5a2c50e94d13	nextflow run basic_channel_operations.nf --step 6
+2026-10-21 15:01:39	1.5s	clever_agnesi	OK	28aabc9d0d0873ee281b19b54a1a2871	4e1811d4-48c1-42cd-bac3-b1aa83469bb5	nextflow run basic_channel_operations.nf --step 7
+2026-10-21 15:01:42	1.7s	awesome_rubens	OK	28aabc9d0d0873ee281b19b54a1a2871	4e47c6fd-a1b5-4f6f-bdfd-1e55aaeb1a05	nextflow run basic_channel_operations.nf --step 8
+2026-10-21 15:01:45	1.8s	jovial_linnaeus	OK	28aabc9d0d0873ee281b19b54a1a2871	cc28362d-4f54-4273-b366-6410c3b71c82	nextflow run basic_channel_operations.nf --step 9
+2026-10-21 15:01:49	1.2s	drunk_easley	OK	28aabc9d0d0873ee281b19b54a1a2871	07d8c00e-7b2e-4cb6-a05f-68d1ffef0a1e	nextflow run basic_channel_operations.nf --step 10
+2026-10-21 15:01:52	1.7s	ridiculous_maxwell	OK	28aabc9d0d0873ee281b19b54a1a2871	8b65468f-4755-4714-aa1a-f412717e92c7	nextflow run basic_channel_operations.nf --step 11
+2026-10-21 15:01:55	2s	mad_lichterman	OK	28aabc9d0d0873ee281b19b54a1a2871	5e0561ac-9c84-4fe7-a4a8-a711efa35d4a	nextflow run basic_channel_operations.nf --step 12
+2026-10-21 15:01:59	1.4s	magical_brattain	OK	28aabc9d0d0873ee281b19b54a1a2871	661c7dbd-28af-496a-9865-e4dcc6e11c53	nextflow run basic_channel_operations.nf --step 13 -dump-channels
+2026-10-21 15:02:02	2.1s	intergalactic_lavoisier	OK	28aabc9d0d0873ee281b19b54a1a2871	64552001-0059-4ce8-9b50-eed81acce204	nextflow run basic_channel_operations.nf --step 14
+2026-10-21 15:02:06	2s	focused_payne	OK	aa8b806a63c57cd81505b09e96573498	20cb4a16-ebc4-4889-9df0-021dc04135f1	nextflow run basics_processes.nf --step 1
+2026-10-21 15:02:10	1.9s	happy_khorana	OK	aa8b806a63c57cd81505b09e96573498	8d8cf933-e4d5-43d1-80cb-6c7058de9fb1	nextflow run basics_processes.nf --step 2
+2026-10-21 15:02:14	1.9s	pensive_cajal	OK	aa8b806a63c57cd81505b09e96573498	ac61ba90-1868-4770-ba18-bac29e55b0de	nextflow run basics_processes.nf --step 3
+2026-10-21 15:02:18	1.9s	nasty_leibniz	OK	aa8b806a63c57cd81505b09e96573498	d340a39f-105a-4195-ab65-5ebe68bff808	nextflow run basics_processes.nf --step 4
+2026-10-21 15:02:22	2.3s	boring_majorana	OK	aa8b806a63c57cd81505b09e96573498	a97e9dd1-e00a-4197-b071-2849d31cc00c	nextflow run basics_processes.nf --step 5
+2026-10-21 15:02:26	2.2s	prickly_goldwasser	OK	aa8b806a63c57cd81505b09e96573498	bba19168-addc-4259-bd91-d2dd5baa628e	nextflow run basics_processes.nf --step 6
+2026-10-21 15:02:30	2.3s	trusting_khorana	OK	aa8b806a63c57cd81505b09e96573498	b7b2f19e-6c79-4551-ad30-98f42958b2a6	nextflow run basics_processes.nf --step 7 --zip bzip2
+2026-10-21 15:02:34	2s	silly_faraday	OK	aa8b806a63c57cd81505b09e96573498	46588cf6-dc24-4c9a-9286-2d1e5e9fb413	nextflow run basics_processes.nf --step 8
+2026-10-21 15:02:38	2.4s	clever_bernard	OK	aa8b806a63c57cd81505b09e96573498	cf99ef2e-3ce0-4b3f-8263-c200c2a985a9	nextflow run basics_processes.nf --step 9
+2026-10-21 15:02:42	2s	sad_carlsson	OK	ee09384321eccb1522e0aa1670e41555	09bc81c5-630a-48ce-a201-032af8560df4	nextflow run advanced_channel_operations.nf --step 1
+2026-10-21 15:02:46	1.4s	compassionate_ardinghelli	OK	ee09384321eccb1522e0aa1670e41555	82ac003b-f6c5-4c8b-9a64-f8d14d67c38e	nextflow run advanced_channel_operations.nf --step 2
+2026-10-21 15:02:49	2.2s	determined_mcclintock	OK	ee09384321eccb1522e0aa1670e41555	b9acd065-4c75-4401-9eca-431de524616e	nextflow run advanced_channel_operations.nf --step 3 -dump-channels
+2026-10-21 15:02:53	1.8s	soggy_morse	OK	ee09384321eccb1522e0aa1670e41555	56a39d12-ce76-40cf-a878-85db09537ba5	nextflow run advanced_channel_operations.nf --step 4
+2026-10-21 15:02:56	2.9s	evil_faggin	OK	3ab05c1009d0e2ca18d34a59f0150c0e	8ab070de-1ba9-4d54-8c61-91212ab7ef9d	nextflow run link_p_c.nf
+2026-10-21 15:06:23	-	pedantic_aryabhata	-	210392a97d289c66fc85dc976d9d5804	1b78f7b7-1669-425d-a9eb-55ec922cd9ee	nextflow run basic_channel_operations.nf --step 13 -dump-channels
+2026-10-21 15:06:39	969ms	scruffy_pasteur	OK	f7e5010d89f4856da2a9885314c53183	7b533819-911f-4263-b223-23f4db4c6c6f	nextflow run basic_channel_operations.nf --step 13 -dump-channels
+2026-10-21 15:07:21	891ms	insane_bell	OK	8667da1c54b262958c3b653074519534	4289e5a9-76e0-4819-8be7-b527d6f81e85	nextflow run channels_intro.nf --step 1
+2026-10-21 15:07:24	1.2s	friendly_gilbert	OK	8667da1c54b262958c3b653074519534	df09844b-5f83-455b-b709-8bc1ab4a9e9c	nextflow run channels_intro.nf --step 2
+2026-10-21 15:07:27	1.2s	loquacious_brahmagupta	OK	8667da1c54b262958c3b653074519534	e676a7cd-5c93-4963-8822-67aa6ed4ebbb	nextflow run channels_intro.nf --step 3
+2026-10-21 15:07:30	1.3s	trusting_torricelli	OK	8667da1c54b262958c3b653074519534	863c69f7-4ecf-42fc-831b-f64c48696eb0	nextflow run channels_intro.nf --step 4
+2026-10-21 15:07:33	1.1s	astonishing_cuvier	OK	8667da1c54b262958c3b653074519534	c1a7e81d-265f-40b8-8827-5879f6cf7251	nextflow run channels_intro.nf --step 5
+2026-10-21 15:07:36	1.3s	drunk_leavitt	OK	8667da1c54b262958c3b653074519534	f2c3e757-bc5a-40ed-99da-f744830366ba	nextflow run channels_intro.nf --step 6
+2026-10-21 15:07:39	1.4s	admiring_torricelli	OK	8667da1c54b262958c3b653074519534	71c97560-9971-4490-8c59-ea0437789605	nextflow run channels_intro.nf --step 7
+2026-10-21 15:07:42	1.6s	cheesy_wiles	OK	f7e5010d89f4856da2a9885314c53183	d6144d99-2082-4825-ac1a-ba0e387473f0	nextflow run basic_channel_operations.nf --step 1
+2026-10-21 15:07:45	1.8s	tender_cray	OK	f7e5010d89f4856da2a9885314c53183	4e712a24-0be9-4c5c-8291-4251e08f00ec	nextflow run basic_channel_operations.nf --step 2
+2026-10-21 15:07:49	1.1s	nice_moriondo	OK	f7e5010d89f4856da2a9885314c53183	300e579f-7083-44b8-bbe1-2ddb9b2a449a	nextflow run basic_channel_operations.nf --step 3
+2026-10-21 15:07:52	1.3s	admiring_stonebraker	OK	f7e5010d89f4856da2a9885314c53183	30bd20dd-e385-4456-8858-1616af8ae65a	nextflow run basic_channel_operations.nf --step 4
+2026-10-21 15:07:55	1.7s	deadly_jepsen	OK	f7e5010d89f4856da2a9885314c53183	fbb9b87b-6f51-479c-8f19-eaaf26c9ae14	nextflow run basic_channel_operations.nf --step 5
+2026-10-21 15:07:58	2.2s	serene_kalman	OK	f7e5010d89f4856da2a9885314c53183	e563fac0-9afb-45bf-b94d-db2e16556137	nextflow run basic_channel_operations.nf --step 6
+2026-10-21 15:08:02	1.7s	magical_payne	OK	f7e5010d89f4856da2a9885314c53183	1c523ed4-26c7-4add-aacf-0978b664f86a	nextflow run basic_channel_operations.nf --step 7
+2026-10-21 15:08:05	2.2s	scruffy_visvesvaraya	OK	f7e5010d89f4856da2a9885314c53183	f31b42bd-827c-4ac7-a819-d3e2d33d1ecc	nextflow run basic_channel_operations.nf --step 8
+2026-10-21 15:08:09	1.6s	astonishing_nobel	OK	f7e5010d89f4856da2a9885314c53183	eec81a62-82e1-433a-9040-e7acd1ef9e3a	nextflow run basic_channel_operations.nf --step 9
+2026-10-21 15:08:12	2s	cranky_brazil	OK	f7e5010d89f4856da2a9885314c53183	5c1a3b89-7e2c-4d74-a2de-6b372f6d57ce	nextflow run basic_channel_operations.nf --step 10
+2026-10-21 15:08:16	1.3s	curious_bartik	OK	f7e5010d89f4856da2a9885314c53183	a62cd7ea-46f0-4410-a361-51dcafa572b8	nextflow run basic_channel_operations.nf --step 11
+2026-10-21 15:08:19	1.8s	confident_ptolemy	OK	f7e5010d89f4856da2a9885314c53183	ddc37218-dbba-49b6-95f9-7cd2cebb3477	nextflow run basic_channel_operations.nf --step 12
+2026-10-21 15:08:23	1.3s	grave_leibniz	OK	f7e5010d89f4856da2a9885314c53183	a5bbe89d-2b44-4e75-bbbc-9d38f4c63245	nextflow run basic_channel_operations.nf --step 13 -dump-channels
+2026-10-21 15:08:26	2.1s	sleepy_leibniz	OK	f7e5010d89f4856da2a9885314c53183	79c904c0-ec7d-405c-9218-a9ffc9c91745	nextflow run basic_channel_operations.nf --step 14
+2026-10-21 15:08:30	2.3s	sharp_hopper	OK	aa8b806a63c57cd81505b09e96573498	e7dea7a2-518e-4071-8c82-2a91fff4f141	nextflow run basics_processes.nf --step 1
+2026-10-21 15:08:34	2.2s	sleepy_goldstine	OK	aa8b806a63c57cd81505b09e96573498	0bb883fe-5402-428a-af0d-19cb1dde6fc8	nextflow run basics_processes.nf --step 2
+2026-10-21 15:08:38	2.1s	lonely_rosalind	OK	aa8b806a63c57cd81505b09e96573498	d7c13a86-eb5c-432a-9137-302e933efb2d	nextflow run basics_processes.nf --step 3
+2026-10-21 15:08:42	2s	distracted_babbage	OK	aa8b806a63c57cd81505b09e96573498	4873c13e-5804-47fc-a811-656cb7929bf5	nextflow run basics_processes.nf --step 4
+2026-10-21 15:08:46	2.2s	sick_mccarthy	OK	aa8b806a63c57cd81505b09e96573498	12006be9-76f0-4fe5-9e2b-9fea6a9718f1	nextflow run basics_processes.nf --step 5
+2026-10-21 15:08:50	2.1s	clever_lalande	OK	aa8b806a63c57cd81505b09e96573498	85cb6e14-d7be-4a61-ae06-e9e10e601eb1	nextflow run basics_processes.nf --step 6
+2026-10-21 15:08:54	2.1s	confident_meninsky	OK	aa8b806a63c57cd81505b09e96573498	f20f45c9-d950-4dff-b0d0-a742e2b9a095	nextflow run basics_processes.nf --step 7 --zip bzip2
+2026-10-21 15:08:58	2.3s	focused_galileo	OK	aa8b806a63c57cd81505b09e96573498	f75cca9b-f63a-444f-af6d-857220d958ad	nextflow run basics_processes.nf --step 8
+2026-10-21 15:09:02	2.5s	scruffy_khorana	OK	aa8b806a63c57cd81505b09e96573498	b98a7c38-0899-4293-b7f0-f84f08b2080c	nextflow run basics_processes.nf --step 9
+2026-10-21 15:09:06	2s	admiring_wozniak	OK	ee09384321eccb1522e0aa1670e41555	cacee627-4766-4de5-b64e-0f07aab14d16	nextflow run advanced_channel_operations.nf --step 1
+2026-10-21 15:09:10	1.5s	suspicious_coulomb	OK	ee09384321eccb1522e0aa1670e41555	397f024c-d231-498e-859b-6ed18c507293	nextflow run advanced_channel_operations.nf --step 2
+2026-10-21 15:09:13	2.4s	nice_jones	OK	ee09384321eccb1522e0aa1670e41555	0ac666ba-d252-4e4f-b2e7-dcaef9cef2d5	nextflow run advanced_channel_operations.nf --step 3 -dump-channels
+2026-10-21 15:09:17	2s	festering_rutherford	OK	ee09384321eccb1522e0aa1670e41555	102e5671-b7fa-4c04-9330-f47b5da375c9	nextflow run advanced_channel_operations.nf --step 4
+2026-10-21 15:09:21	2.1s	intergalactic_boyd	OK	3ab05c1009d0e2ca18d34a59f0150c0e	39f659be-80ed-4489-a184-e89843741464	nextflow run link_p_c.nf
+2026-10-21 15:15:40	1.7s	magical_lovelace	OK	8667da1c54b262958c3b653074519534	fa2fda47-66e1-42b6-908d-04ad07799189	nextflow run channels_intro.nf --step 1
+2026-10-21 15:15:43	1.7s	stoic_swanson	OK	8667da1c54b262958c3b653074519534	c2ace366-8d7f-4fb4-b08f-1228f13252db	nextflow run channels_intro.nf --step 2
+2026-10-21 15:15:46	1.9s	hopeful_sammet	OK	8667da1c54b262958c3b653074519534	25853e25-b36b-4a35-8543-2f18d1ea9f5d	nextflow run channels_intro.nf --step 3
+2026-10-21 15:15:50	1.1s	maniac_heyrovsky	OK	8667da1c54b262958c3b653074519534	7c72b579-9aec-4639-a303-c9d1b39d2a65	nextflow run channels_intro.nf --step 4
+2026-10-21 15:15:53	1.2s	wise_liskov	OK	8667da1c54b262958c3b653074519534	40688ada-d7b5-46d6-936d-971dc76664ed	nextflow run channels_intro.nf --step 5
+2026-10-21 15:15:56	1.3s	voluminous_leakey	OK	8667da1c54b262958c3b653074519534	550cb30f-c63f-44a5-b0c0-25124e6eba8f	nextflow run channels_intro.nf --step 6
+2026-10-21 15:15:59	1.5s	festering_kirch	OK	8667da1c54b262958c3b653074519534	c6be7efd-d2b3-449f-a4f3-0904cf03cf9f	nextflow run channels_intro.nf --step 7
+2026-10-21 15:16:02	1.7s	spontaneous_ochoa	OK	f7e5010d89f4856da2a9885314c53183	e955220c-894f-471d-b34e-5b87e50ba387	nextflow run basic_channel_operations.nf --step 1
+2026-10-21 15:16:05	1.8s	irreverent_picasso	OK	f7e5010d89f4856da2a9885314c53183	a328620d-60ce-4b54-9d07-188236bb9e24	nextflow run basic_channel_operations.nf --step 2
+2026-10-21 15:16:09	998ms	golden_laplace	OK	f7e5010d89f4856da2a9885314c53183	0705a575-b4ac-467e-b379-6d4b61f69e7f	nextflow run basic_channel_operations.nf --step 3
+2026-10-21 15:16:12	1.2s	intergalactic_raman	OK	f7e5010d89f4856da2a9885314c53183	bd8cae4a-ae90-424f-b1b5-35a340d37e86	nextflow run basic_channel_operations.nf --step 4
+2026-10-21 15:16:15	1.5s	sad_roentgen	OK	f7e5010d89f4856da2a9885314c53183	2cc62dff-5981-4cc9-995b-9c13b7bfe845	nextflow run basic_channel_operations.nf --step 5
+2026-10-21 15:16:18	1.8s	reverent_yonath	OK	f7e5010d89f4856da2a9885314c53183	c308c9f5-0dee-4433-b5fb-7d7a1cb90487	nextflow run basic_channel_operations.nf --step 6
+2026-10-21 15:16:22	1.2s	astonishing_bell	OK	f7e5010d89f4856da2a9885314c53183	1e39201f-e3c7-423d-8800-9e4048d23a57	nextflow run basic_channel_operations.nf --step 7
+2026-10-21 15:16:25	1.6s	thirsty_boltzmann	OK	f7e5010d89f4856da2a9885314c53183	3d6add8e-512a-4bc6-9e08-d67c4fd301eb	nextflow run basic_channel_operations.nf --step 8
+2026-10-21 15:16:29	978ms	condescending_mcnulty	OK	f7e5010d89f4856da2a9885314c53183	055bf58f-3708-4194-b066-40353ae087e3	nextflow run basic_channel_operations.nf --step 9
+2026-10-21 15:16:32	1.5s	loquacious_euclid	OK	f7e5010d89f4856da2a9885314c53183	c5edd591-92f5-442d-b68c-c1027ab6c521	nextflow run basic_channel_operations.nf --step 10
+2026-10-21 15:16:35	2s	deadly_rubens	OK	f7e5010d89f4856da2a9885314c53183	92b661a7-4e14-44fd-9b6c-8e05051b3af5	nextflow run basic_channel_operations.nf --step 11
+2026-10-21 15:16:39	1.5s	hopeful_elion	OK	f7e5010d89f4856da2a9885314c53183	adb4df05-3d24-4ba4-9abc-65ac5d299caa	nextflow run basic_channel_operations.nf --step 12
+2026-10-21 15:16:42	2s	special_joliot	OK	f7e5010d89f4856da2a9885314c53183	9e2635d5-e802-429d-af39-774976284529	nextflow run basic_channel_operations.nf --step 13 -dump-channels
+2026-10-21 15:16:46	1.7s	spontaneous_montalcini	OK	f7e5010d89f4856da2a9885314c53183	7f77ac2a-e63b-4d53-ba81-7edfeafcc29b	nextflow run basic_channel_operations.nf --step 14
+2026-10-21 15:16:50	1.8s	friendly_hodgkin	OK	22705f34ca6327bd51c86b6c90534601	425a9b79-35fd-4308-9664-957e96029dd4	nextflow run basics_processes.nf --step 1
+2026-10-21 15:16:54	1.7s	insane_bardeen	OK	22705f34ca6327bd51c86b6c90534601	ae6c2c29-15bc-48c1-81df-1bc5b2b73cff	nextflow run basics_processes.nf --step 2
+2026-10-21 15:16:58	1.7s	elegant_bose	OK	22705f34ca6327bd51c86b6c90534601	87a822b8-0a6b-4782-bea6-a94309084f74	nextflow run basics_processes.nf --step 3
+2026-10-21 15:17:02	1.6s	determined_agnesi	OK	22705f34ca6327bd51c86b6c90534601	14112cb4-92e0-420c-9d50-9270c9a3d373	nextflow run basics_processes.nf --step 4
+2026-10-21 15:17:06	1.8s	desperate_knuth	OK	22705f34ca6327bd51c86b6c90534601	7e4968d1-853e-4c20-9ebb-9abb0f734f6c	nextflow run basics_processes.nf --step 5
+2026-10-21 15:17:10	2s	stoic_shockley	OK	22705f34ca6327bd51c86b6c90534601	bda926cf-7b84-4d5c-b545-3bd5487dfc88	nextflow run basics_processes.nf --step 6
+2026-10-21 15:17:14	2.2s	voluminous_kowalevski	OK	22705f34ca6327bd51c86b6c90534601	c4455533-6c8f-4087-8839-0d80152a7297	nextflow run basics_processes.nf --step 7 --zip bzip2
+2026-10-21 15:17:18	2.4s	crazy_volhard	OK	22705f34ca6327bd51c86b6c90534601	ec0cedb1-af83-4301-9345-ae1e3a048d0e	nextflow run basics_processes.nf --step 8
+2026-10-21 15:17:22	2.8s	peaceful_swartz	OK	22705f34ca6327bd51c86b6c90534601	5a8aa459-6844-435b-9e3c-3e47ad1d790b	nextflow run basics_processes.nf --step 9
+2026-10-21 15:17:27	1.3s	nauseous_carlsson	OK	ee09384321eccb1522e0aa1670e41555	b0cbb813-917c-44d7-8a29-0f2e7c9c447e	nextflow run advanced_channel_operations.nf --step 1
+2026-10-21 15:17:30	1.8s	disturbed_escher	OK	ee09384321eccb1522e0aa1670e41555	a0289c27-b430-4ad0-a1f2-a55186735201	nextflow run advanced_channel_operations.nf --step 2
+2026-10-21 15:17:34	1.9s	compassionate_banach	OK	ee09384321eccb1522e0aa1670e41555	6d29c2ca-a95c-4bca-8cd2-6bbaa20d91b9	nextflow run advanced_channel_operations.nf --step 3 -dump-channels
+2026-10-21 15:17:38	1.5s	backstabbing_pike	OK	ee09384321eccb1522e0aa1670e41555	5935bf6e-2aed-465d-ac69-cfe77ad31048	nextflow run advanced_channel_operations.nf --step 4
+2026-10-21 15:17:41	2.6s	wise_faraday	OK	3ab05c1009d0e2ca18d34a59f0150c0e	9399e816-da60-4a20-87ea-d9f0ade335e6	nextflow run link_p_c.nf
+2026-10-21 15:21:38	1.1s	festering_kimura	OK	8667da1c54b262958c3b653074519534	5d473a20-6f06-43b4-b889-285eb377d478	nextflow run channels_intro.nf --step 1
+2026-10-21 15:21:41	1.1s	maniac_brenner	OK	8667da1c54b262958c3b653074519534	d5027030-3dd5-4f1d-b1d7-738e00a810ae	nextflow run channels_intro.nf --step 2
+2026-10-21 15:21:44	1.1s	big_rosalind	OK	8667da1c54b262958c3b653074519534	4eff8fca-f804-4d05-bed0-85680b71a551	nextflow run channels_intro.nf --step 3
+2026-10-21 15:21:47	1.3s	cheeky_morse	OK	8667da1c54b262958c3b653074519534	b48c2559-1471-47fc-aec2-758a046684f3	nextflow run channels_intro.nf --step 4
+2026-10-21 15:21:50	1.5s	goofy_becquerel	OK	8667da1c54b262958c3b653074519534	fe452338-424a-424b-8d57-783771c361c3	nextflow run channels_intro.nf --step 5
+2026-10-21 15:21:53	1.7s	boring_maxwell	OK	8667da1c54b262958c3b653074519534	867e946d-3ff3-4465-b97a-109ad758292b	nextflow run channels_intro.nf --step 6
+2026-10-21 15:21:56	1.6s	admiring_wing	OK	8667da1c54b262958c3b653074519534	3475d131-6b75-4338-8eac-3a6040a62202	nextflow run channels_intro.nf --step 7
+2026-10-21 15:21:59	1.8s	small_neumann	OK	f7e5010d89f4856da2a9885314c53183	63b7fe3a-a449-4622-8a32-2c4cf3f39ad7	nextflow run basic_channel_operations.nf --step 1
+2026-10-21 15:22:02	1.9s	shrivelled_kowalevski	OK	f7e5010d89f4856da2a9885314c53183	df18ed38-3b91-47c2-85cd-5077ba395c9b	nextflow run basic_channel_operations.nf --step 2
+2026-10-21 15:22:06	1.1s	sleepy_heisenberg	OK	f7e5010d89f4856da2a9885314c53183	30d38831-a824-456b-a664-a6c7d54f732a	nextflow run basic_channel_operations.nf --step 3
+2026-10-21 15:22:09	1.4s	awesome_gautier	OK	f7e5010d89f4856da2a9885314c53183	3885ce9a-ea44-40e9-b866-1172316732c4	nextflow run basic_channel_operations.nf --step 4
+2026-10-21 15:22:12	1.5s	marvelous_hawking	OK	f7e5010d89f4856da2a9885314c53183	686398c0-4123-417f-b6ac-5bc04be4d16f	nextflow run basic_channel_operations.nf --step 5
+2026-10-21 15:22:15	1.7s	loving_archimedes	OK	f7e5010d89f4856da2a9885314c53183	25e2ef5e-51e3-4fef-9ecc-e57d4a84a9e0	nextflow run basic_channel_operations.nf --step 6
+2026-10-21 15:22:18	2s	nauseous_mcnulty	OK	f7e5010d89f4856da2a9885314c53183	2751e0f4-2843-4d01-9774-4023157982cd	nextflow run basic_channel_operations.nf --step 7
+2026-10-21 15:22:22	1.1s	grave_cantor	OK	f7e5010d89f4856da2a9885314c53183	51937049-1eec-4e77-ba55-f0cb9f7d2a54	nextflow run basic_channel_operations.nf --step 8
+2026-10-21 15:22:25	1.6s	small_noyce	OK	f7e5010d89f4856da2a9885314c53183	ccf892b1-6e0e-42dd-a462-b4106addda86	nextflow run basic_channel_operations.nf --step 9
+2026-10-21 15:22:28	2.1s	reverent_turing	OK	f7e5010d89f4856da2a9885314c53183	73747341-25f7-4e12-9e42-7545bdec3f82	nextflow run basic_channel_operations.nf --step 10
+2026-10-21 15:22:32	1.5s	pedantic_kowalevski	OK	f7e5010d89f4856da2a9885314c53183	eb4a5eb2-f50f-4794-ad2d-4697f79b3ac3	nextflow run basic_channel_operations.nf --step 11
+2026-10-21 15:22:35	2s	extravagant_shockley	OK	f7e5010d89f4856da2a9885314c53183	6c602be0-2037-44b9-b587-502b433f1b5f	nextflow run basic_channel_operations.nf --step 12
+2026-10-21 15:22:39	1.8s	backstabbing_kilby	OK	f7e5010d89f4856da2a9885314c53183	6b1878fa-90ab-4909-990e-86f8e819c88a	nextflow run basic_channel_operations.nf --step 13 -dump-channels
+2026-10-21 15:22:43	1.5s	grave_agnesi	OK	f7e5010d89f4856da2a9885314c53183	4ca9b757-ef1d-4621-aca0-ad125d5d6707	nextflow run basic_channel_operations.nf --step 14
+2026-10-21 15:22:46	2.5s	gloomy_raman	OK	22705f34ca6327bd51c86b6c90534601	68de8929-9f53-4ac9-83a0-fe0be848705e	nextflow run basics_processes.nf --step 1
+2026-10-21 15:22:50	2.7s	lonely_leibniz	OK	22705f34ca6327bd51c86b6c90534601	c97cece2-9362-48c1-b33e-41260b782b4f	nextflow run basics_processes.nf --step 2
+2026-10-21 15:22:54	2.5s	reverent_panini	OK	22705f34ca6327bd51c86b6c90534601	d143510d-0939-47f0-938a-900b58b5dd4e	nextflow run basics_processes.nf --step 3
+2026-10-21 15:22:58	2.3s	goofy_nightingale	OK	22705f34ca6327bd51c86b6c90534601	b5f30425-73da-41e4-9f80-0a71658f0aa2	nextflow run basics_processes.nf --step 4
+2026-10-21 15:23:03	1.7s	irreverent_lamarr	OK	22705f34ca6327bd51c86b6c90534601	5ecb544d-d2bb-43c9-b9f9-13dfc0751adb	nextflow run basics_processes.nf --step 5
+2026-10-21 15:23:07	1.9s	elegant_linnaeus	OK	22705f34ca6327bd51c86b6c90534601	9f690d1c-ce15-4b4b-b52c-26e8c1a2c932	nextflow run basics_processes.nf --step 6
+2026-10-21 15:23:11	1.9s	zen_pike	OK	22705f34ca6327bd51c86b6c90534601	51475983-ae4a-4c77-b769-dc735377a11a	nextflow run basics_processes.nf --step 7 --zip bzip2
+2026-10-21 15:23:15	1.9s	astonishing_archimedes	OK	22705f34ca6327bd51c86b6c90534601	15f16b46-7cf3-4202-b834-cabde6b24dff	nextflow run basics_processes.nf --step 8
+2026-10-21 15:23:19	2s	amazing_ramanujan	OK	22705f34ca6327bd51c86b6c90534601	fe24c227-948d-44a4-a20e-abd8db7be196	nextflow run basics_processes.nf --step 9
+2026-10-21 15:23:23	1.6s	amazing_escher	OK	ee09384321eccb1522e0aa1670e41555	9004f55f-36b1-48b2-9764-5eef57a456c5	nextflow run advanced_channel_operations.nf --step 1
+2026-10-21 15:23:26	2.2s	shrivelled_mahavira	OK	ee09384321eccb1522e0aa1670e41555	70d85493-c1c8-432e-97fb-1ad59774024b	nextflow run advanced_channel_operations.nf --step 2
+2026-10-21 15:23:30	2.1s	nasty_shockley	OK	ee09384321eccb1522e0aa1670e41555	3cdae1d9-c9b8-4498-a76b-6935945e3be5	nextflow run advanced_channel_operations.nf --step 3 -dump-channels
+2026-10-21 15:23:34	1.6s	nasty_mayer	OK	ee09384321eccb1522e0aa1670e41555	03b4125a-f981-43a9-af9a-229aa1e101cc	nextflow run advanced_channel_operations.nf --step 4
+2026-10-21 15:23:37	2.8s	naughty_poincare	OK	3ecdd77439dc7bffa8b2e9bebab8cfdd	9a28cbbf-10c7-4ffe-a2b8-276d6d3ca782	nextflow run link_p_c.nf
+2026-10-21 15:44:29	1.4s	awesome_volta	OK	c0cffd41770d653c7f4a496f20c50a07	bed12d55-c640-44d2-8d67-a5cdcaa8af53	nextflow run basics_processes.nf --step 5
+2026-10-21 15:45:18	-	infallible_goldstine	-	4afde445aed595e70796629129b99cd7	9ae41c70-842b-4ace-8586-21e0a30124e6	nextflow run basics_processes.nf --step 6
+2026-10-21 15:47:27	1.6s	marvelous_pike	OK	bc127e3b07ba1daa29cf3680b188f091	40e6d789-5fcd-40a6-849e-758c6afe64fd	nextflow run basics_processes.nf --step 6
+2026-10-21 15:54:28	2.3s	goofy_cajal	OK	397d84d46f00319f76f024236aff54e1	237ffd6b-1745-4487-a041-1ab8b3199e70	nextflow run basics_processes.nf --step 5
+2026-10-21 15:54:34	2.2s	nasty_ekeblad	OK	397d84d46f00319f76f024236aff54e1	f96faebf-952e-4704-a3ba-33bef986aeaf	nextflow run basics_processes.nf --step 6
+2026-10-21 15:54:41	2.7s	extravagant_baekeland	OK	397d84d46f00319f76f024236aff54e1	e025c693-d6bf-4b26-96e9-8221d6612387	nextflow run basics_processes.nf --step 7 --zip bzip2
+2026-10-21 15:56:59	2.1s	fervent_wilson	OK	397d84d46f00319f76f024236aff54e1	ecdb4975-5b32-40b0-aa2d-4851ed4d81eb	nextflow run basics_processes.nf --step 8
+2026-10-21 15:59:16	1.3s	amazing_cori	OK	8667da1c54b262958c3b653074519534	4b9934e2-c88f-41e5-8e79-6c833bf31c34	nextflow run channels_intro.nf --step 1
+2026-10-21 15:59:19	1.6s	extravagant_hopper	OK	8667da1c54b262958c3b653074519534	4f16d3c7-26ab-44dd-ae91-77a97bfe700c	nextflow run channels_intro.nf --step 2
+2026-10-21 15:59:22	1.7s	desperate_goldwasser	OK	8667da1c54b262958c3b653074519534	05b9ddb5-944b-41f7-aa1d-050222073cf1	nextflow run channels_intro.nf --step 3
+2026-10-21 15:59:25	1.9s	naughty_brazil	OK	8667da1c54b262958c3b653074519534	b4ee5279-2512-46d1-aae6-eb101cb9cedb	nextflow run channels_intro.nf --step 4
+2026-10-21 15:59:29	1.1s	fabulous_sax	OK	8667da1c54b262958c3b653074519534	1fe91f31-6c71-4c61-9682-0237f5427e26	nextflow run channels_intro.nf --step 5
+2026-10-21 15:59:32	1.1s	loquacious_montalcini	OK	8667da1c54b262958c3b653074519534	19884d67-f171-4937-8617-64924c327265	nextflow run channels_intro.nf --step 6
+2026-10-21 15:59:35	1.4s	suspicious_fermi	OK	8667da1c54b262958c3b653074519534	d4324ea0-d0d6-44df-b6aa-a066854a3b78	nextflow run channels_intro.nf --step 7
+2026-10-21 15:59:38	1.6s	marvelous_brattain	OK	f7e5010d89f4856da2a9885314c53183	fcd1a07f-2203-4d80-a9a0-735d25c324ac	nextflow run basic_channel_operations.nf --step 1
+2026-10-21 15:59:41	2.1s	hopeful_poisson	OK	f7e5010d89f4856da2a9885314c53183	6a2c5bbc-fa19-4707-936f-9a2362c70dd4	nextflow run basic_channel_operations.nf --step 2
+2026-10-21 15:59:45	1.3s	romantic_becquerel	OK	f7e5010d89f4856da2a9885314c53183	6a6300ea-893f-4bfa-902e-0d89eafc80b6	nextflow run basic_channel_operations.nf --step 3
+2026-10-21 15:59:48	1.7s	cheesy_linnaeus	OK	f7e5010d89f4856da2a9885314c53183	6c212c60-5a12-472a-9591-fd18d9399f38	nextflow run basic_channel_operations.nf --step 4
+2026-10-21 15:59:51	1.9s	nauseous_linnaeus	OK	f7e5010d89f4856da2a9885314c53183	b00252da-c592-431a-b6d5-120d735d07be	nextflow run basic_channel_operations.nf --step 5
+2026-10-21 15:59:55	1.4s	fabulous_snyder	OK	f7e5010d89f4856da2a9885314c53183	3c13e689-1d4c-4a7a-bd32-a38d6320e1e3	nextflow run basic_channel_operations.nf --step 6
+2026-10-21 15:59:58	1.5s	prickly_neumann	OK	f7e5010d89f4856da2a9885314c53183	01f083ac-2a2d-402e-b316-cc65f1e20fe6	nextflow run basic_channel_operations.nf --step 7
+2026-10-21 16:00:01	1.8s	tender_noyce	OK	f7e5010d89f4856da2a9885314c53183	8171a4e7-b237-4224-aaa8-72e508237498	nextflow run basic_channel_operations.nf --step 8
+2026-10-21 16:00:05	1.4s	nauseous_venter	OK	f7e5010d89f4856da2a9885314c53183	836595b5-dda1-428c-8ef5-cd0c148180d2	nextflow run basic_channel_operations.nf --step 9
+2026-10-21 16:00:08	2.1s	magical_wilson	OK	f7e5010d89f4856da2a9885314c53183	9e96b051-6aee-486c-897f-01a9b466b0f1	nextflow run basic_channel_operations.nf --step 10
+2026-10-21 16:00:12	1.7s	kickass_shockley	OK	f7e5010d89f4856da2a9885314c53183	95e22c1e-529d-4533-9bcb-ac62d6397e7d	nextflow run basic_channel_operations.nf --step 11
+2026-10-21 16:00:16	1.4s	special_brenner	OK	f7e5010d89f4856da2a9885314c53183	2901fcdd-bd79-4406-b1f2-6f11670413e0	nextflow run basic_channel_operations.nf --step 12
+2026-10-21 16:00:19	2s	confident_pike	OK	f7e5010d89f4856da2a9885314c53183	c30947f8-f5bb-4048-a73f-a4fa6a74b9dd	nextflow run basic_channel_operations.nf --step 13 -dump-channels
+2026-10-21 16:00:23	1.7s	reverent_mccarthy	OK	f7e5010d89f4856da2a9885314c53183	d8821255-1a8e-4d0a-b36e-da688fca3c41	nextflow run basic_channel_operations.nf --step 14
+2026-10-21 16:00:27	1.9s	shrivelled_shirley	OK	397d84d46f00319f76f024236aff54e1	2eae2f90-5e74-4966-807c-d960170a0033	nextflow run basics_processes.nf --step 1
+2026-10-21 16:00:31	2s	magical_lagrange	OK	397d84d46f00319f76f024236aff54e1	d14d6a60-ee5e-4e8b-a369-9f6d88ed6fcb	nextflow run basics_processes.nf --step 2
+2026-10-21 16:00:35	2.4s	deadly_sammet	OK	397d84d46f00319f76f024236aff54e1	620bd4eb-4aa4-4e09-b8b2-4ce5f0c57f7b	nextflow run basics_processes.nf --step 3
+2026-10-21 16:00:40	2.3s	loving_gilbert	OK	397d84d46f00319f76f024236aff54e1	667b1aac-674e-4baa-b249-0bfef41f0105	nextflow run basics_processes.nf --step 4
+2026-10-21 16:00:45	2.1s	loving_moriondo	OK	397d84d46f00319f76f024236aff54e1	ce703cdf-1444-4b2e-bdbd-bdac70930c78	nextflow run basics_processes.nf --step 5
+2026-10-21 16:00:49	2.3s	evil_turing	OK	397d84d46f00319f76f024236aff54e1	0d25efd5-ef6c-4309-b111-3cdace3b7e93	nextflow run basics_processes.nf --step 6
+2026-10-21 16:00:53	2.4s	awesome_kalman	OK	397d84d46f00319f76f024236aff54e1	857503d0-5332-47d5-9d2e-3a31756fea28	nextflow run basics_processes.nf --step 7 --zip bzip2
+2026-10-21 16:00:58	1.9s	silly_koch	OK	397d84d46f00319f76f024236aff54e1	2e438283-3a08-480e-aba8-df80a5433414	nextflow run basics_processes.nf --step 8
+2026-10-21 16:01:02	2s	nice_elion	OK	397d84d46f00319f76f024236aff54e1	4a12e105-5b90-4e46-9cf4-1d56eca5fad8	nextflow run basics_processes.nf --step 9
+2026-10-21 16:01:06	1.4s	hopeful_venter	OK	ee09384321eccb1522e0aa1670e41555	20c223a9-34b3-474a-99ab-02cb959adfd4	nextflow run advanced_channel_operations.nf --step 1
+2026-10-21 16:01:09	2s	nasty_lamarr	OK	ee09384321eccb1522e0aa1670e41555	de09cde8-6fb0-490d-9a77-378c0c1e3b36	nextflow run advanced_channel_operations.nf --step 2
+2026-10-21 16:01:13	2s	curious_wiles	OK	ee09384321eccb1522e0aa1670e41555	ec8a1f6b-1338-484b-8502-11971d9f4558	nextflow run advanced_channel_operations.nf --step 3 -dump-channels
+2026-10-21 16:01:17	1.6s	boring_cuvier	OK	ee09384321eccb1522e0aa1670e41555	deea6186-2791-4279-82cb-0922a48d3f89	nextflow run advanced_channel_operations.nf --step 4
+2026-10-21 16:01:20	2.7s	golden_waddington	OK	3ecdd77439dc7bffa8b2e9bebab8cfdd	5490c35a-843b-4a83-a845-d3aeb866339a	nextflow run link_p_c.nf

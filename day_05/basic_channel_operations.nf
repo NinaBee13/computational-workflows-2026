@@ -122,8 +122,8 @@ workflow{
             odd: it % 2 != 0
             even: it % 2 == 0
         }
-        in_ch.odd.toList().view()
-        in_ch.even.toList().view()
+        in_ch.odd.toList().view{"Odd numbers: $it"}
+        in_ch.even.toList().view{"Even numbers: $it"}
 
     }
 
