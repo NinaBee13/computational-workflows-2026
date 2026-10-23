@@ -1,0 +1,2 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	50/745752	2586553	NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:VALIDATOR (sample_sheet.csv)	ABORTED	-	2026-10-23 21:03:25.762	-	-	-	-	-	-	-
